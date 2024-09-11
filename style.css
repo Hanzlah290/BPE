@@ -1,0 +1,98 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Body Styling */
+body {
+    line-height: 1.6;
+    background-color: #ffffff;
+    padding: 20px;
+}
+
+header {
+    background-color: #ffffff;
+    color: #363434;
+    padding: 10px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Ensures the logo is on the left, and other content can be aligned as needed */
+}
+
+header img {
+    max-width: 10%;
+    height: auto;
+    margin-left: 20px; /* Add some spacing to the left */
+}
+
+header h1 {
+    font-size: 2em;
+    margin-right: auto; /* Pushes the heading to the center if there's additional content on the right */
+    text-align: center;
+    flex-grow: 1; /* Ensures that the heading takes up the remaining space */
+}
+
+/* Aligning content to the right (Optional, if you have other items like navigation) */
+header nav {
+    margin-right: 20px; /* Spacing on the right */
+}
+
+/* Main Content Styling */
+main {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+main .pics {
+    height: auto;
+    display: inline-block;
+    margin: 10px auto;
+    max-width: 49%;
+}
+main .pics img {
+    max-width: 49%;
+    height: auto;
+}
+
+main .Para{
+    display: inline-block;
+    max-width: 50%;
+}
+/* Footer Styling */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    border-radius: 5px;
+}
+
+footer a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 5px;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+/* Footer Contact Information */
+footer p, footer div {
+    margin: 10px 0;
+}
+
+footer p a {
+    color: #fff;
+    text-decoration: none;
+}
+
+footer p a:hover {
+    text-decoration: underline;
+}
