@@ -9,60 +9,75 @@
 /* Body Styling */
 body {
     line-height: 1.6;
-    background-color: #ffffff;
+    background-color: #dbdbdb;
     padding: 20px;
 }
 
-header {
-    background-color: #ffffff;
-    color: #363434;
-    padding: 10px 0;
-    display: flex;
-    align-items: center;
-    justify-content: space-between; /* Ensures the logo is on the left, and other content can be aligned as needed */
+.hero-section {
+  position: relative;
+  background-image: url('MainBackground.jpg');
+  background-size: 50%;
+  /*background-position: center;*/
+  /*text-align: center;*/
+  /*padding: 104px 20px;*/
+  /*color: #fff;*/
+  /*overflow: hidden;*/
+  /*padding-top: 33%;*/
+  padding-bottom: 16%;
+  margin: -2%;
+  /*margin-top: 1%;*/
 }
 
-header img {
-    max-width: 10%;
-    height: auto;
-    margin-left: 20px; /* Add some spacing to the left */
+.hero-section .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Black overlay with 50% opacity */
+    z-index: 1; /* Ensure the overlay is above the background image but below the content */
 }
 
-header h1 {
-    font-size: 2em;
-    margin-right: auto; /* Pushes the heading to the center if there's additional content on the right */
-    text-align: center;
-    flex-grow: 1; /* Ensures that the heading takes up the remaining space */
+.hero-section img {
+    position: relative; /* Ensure the logo is above the overlay */
+    z-index: 2; /* Ensure the logo is above the overlay */
+    max-width: 11%; /* Ensure the image scales appropriately */
+    height: auto; /* Maintain aspect ratio */
+    float: left;
+    margin-top: 0;
 }
 
+.hero-section h1 {
+    display: inline-block;
+    position: relative; /* Ensure the heading is above the overlay */
+   color: #59db59;
+    z-index: 2; /* Ensure the heading is above the overlay */
+    font-size: 3em; /* Adjust font size as needed */
+    margin-left: 33%; /* Remove default margin */
+    margin-top: 1%;
+}
 /* Aligning content to the right (Optional, if you have other items like navigation) */
-header nav {
+.hero-section nav {
     margin-right: 20px; /* Spacing on the right */
 }
 
 /* Main Content Styling */
 main {
-    background-color: #fff;
-    padding: 20px;
+    background-color: #dbdbdb;
+    /*padding: 20px;
     border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    margin-bottom: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);*/
+    margin: 5%;
 }
 
-main .pics {
-    height: auto;
+main .Para1{
     display: inline-block;
-    margin: 10px auto;
-    max-width: 49%;
 }
-main .pics img {
-    max-width: 49%;
-    height: auto;
-}
-
-main .Para{
-    display: inline-block;
-    max-width: 50%;
+main .ParaBox{
+    background-color: #e5ffe3a3;
+    border-radius: 5px;
+    box-shadow:10px 10px 10px 10px rgba(0, 0, 0, 0.1) ;
+    padding: 4%;
 }
 /* Footer Styling */
 footer {
